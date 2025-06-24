@@ -5,7 +5,7 @@ import { OrbitControls } from '@react-three/drei'
 
 import Box from './components/Box.jsx'
 
-export default function App() {
+export default function App () {
   return (
     // A base canvas to hold our scene
     <Canvas>

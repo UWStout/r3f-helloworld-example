@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 
-export default function Box(props) {
+export default function Box (props) {
   // This reference gives us direct access to the THREE.Mesh object
   const ref = useRef()
 
@@ -37,7 +37,8 @@ export default function Box(props) {
       scale={clicked ? 1.5 : 1}
       onClick={onClicked}
       onPointerOver={onHovered}
-      onPointerOut={onNotHovered}>
+      onPointerOut={onNotHovered}
+    >
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
     </mesh>
